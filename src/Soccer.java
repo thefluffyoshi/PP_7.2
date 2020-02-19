@@ -10,5 +10,5 @@ public class Soccer
         this.team = team;
         this.ball = ball;
         this.score = score;
-    }
+    }//end constructor
 }//end soccer
