@@ -1,0 +1,25 @@
+import java.text.DecimalFormat;
+public abstract class Sport
+{
+    protected String sport_Name;
+    protected String equipment;
+    protected int score;
+    DecimalFormat fmt = new DecimalFormat("#.#");
+
+    public Sport(String sport_Name, String equipment, int score)
+    {
+        this.sport_Name = sport_Name;
+        this.equipment = equipment;
+        this.score = score;
+    }//end constructor
+
+    public String toString()
+    {
+        String output = "";
+        output += "Sport name: " + sport_Name;
+        output += "\nThis sport requires: " + equipment;
+        output += "\nHighest score to win is: " + score;
+
+        return output;
+    }//end toString
+}//end sport
