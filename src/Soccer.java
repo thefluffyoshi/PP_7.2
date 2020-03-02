@@ -1,14 +1,16 @@
-public class Soccer
+public class Soccer extends Sport
 {
-    private String equipment;
-    private String team;
-    private int score;
-    private String ball;
-    public Soccer(String equipment, String team, String ball, int score)
+    private int players;
+    public Soccer(String sport_Name, String equipment, int score, int players)
     {
-        this.equipment = equipment;
-        this.team = team;
-        this.ball = ball;
-        this.score = score;
-    }//end constructor
+        super(sport_Name, equipment, score);
+        this.players = players;
+    }//constructor
+
+    public String toString()
+    {
+        String output = super.toString() + "\nNumber of players: " + players;
+
+        return output;
+    }//end toString
 }//end soccer
